@@ -4,6 +4,6 @@
 
 `git clone https://github.com/thrinethratechhara/hadoop.git`
 
-`cd hadoop`
+`cd hadoop/mapreduce`
 
 `bash mapreduce.sh`
