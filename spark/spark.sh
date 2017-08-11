@@ -1,7 +1,7 @@
 #!/bin/bash
 SPARK_HOME='/usr/hdp/current/spark2-client/'
 CLASS='org.apache.spark.examples.SparkPi'
-MASTER='yarn-client'
+MASTER='yarn'
 NUM_EXECUTORS='3'
 DRIVER_MEMORY='512m'
 EXECUTOR_MEMORY='512m'
