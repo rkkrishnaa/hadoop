@@ -2,8 +2,10 @@
 
 `Example mapreduce program`
 
-`git clone https://github.com/thrinethratechhara/hadoop.git`
+`git clone https://github.com/thrinethratechhara/hadoop.git $HOME/hadoop`
 
-`cd hadoop/mapreduce`
+`cd $HOME/hadoop`
 
-`bash mapreduce.sh`
+`bash mapreduce/mapreduce.sh`
+`bash spark/spark.sh`
+`bash hive/hive.sh`
