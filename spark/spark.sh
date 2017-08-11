@@ -4,7 +4,7 @@ CLASS='org.apache.spark.examples.SparkPi'
 MASTER='yarn'
 NUM_EXECUTORS='3'
 DRIVER_MEMORY='512m'
-EXECUTOR_MEMORY='512m'
+EXECUTOR_MEMORY='1024m'
 EXECUTOR_CORES='1'
 cd $SPARK_HOME
 spark-submit --class $CLASS \
