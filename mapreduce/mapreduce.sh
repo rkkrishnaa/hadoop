@@ -1,8 +1,8 @@
 homefolder=$HOME
 #a=$(openssl rand -hex 2)
 a=$(date +%Y%m%d%H%M%S)
-input_dir=input_dir$a
-output_dir=output_dir$a
+input_dir=mapred_input_dir$a
+output_dir=mapred_output_dir$a
 echo "hadoop input directory"  $input_dir
 echo "hadoop output directory" $output_dir
 mkdir -p mapred$a/units
