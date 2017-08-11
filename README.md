@@ -7,5 +7,7 @@
 `cd $HOME/hadoop`
 
 `bash mapreduce/mapreduce.sh`
+
 `bash spark/spark.sh`
+
 `bash hive/hive.sh`
