@@ -8,9 +8,7 @@ echo "hive input directory"  $input_dir
 echo "hive output directory" $output_dir
 
 mkdir -p $HOME/$input_dir
-cd $HOME/$input_dir
-wget https://github.com/hortonworks/tutorials/raw/hdp-2.5/driver_data.zip -O $HOME/$input_dir/driver_data.zip
-unzip $HOME/$input_dir/driver_data.zip 
+cp hive/* $HOME/$input_dir
 hadoop fs -mkdir $input_dir
 hadoop fs -put  $HOME/$input_dir/drivers.csv $input_dir
 hadoop fs -put  $HOME/$input_dir/timesheet.csv $input_dir
