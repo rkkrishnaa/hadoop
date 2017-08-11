@@ -7,12 +7,12 @@ output_dir=hive_output_dir$a
 echo "hive input directory"  $input_dir
 echo "hive output directory" $output_dir
 
-mkdir -p $HOME/$input_dir
-cp hive/* $HOME/$input_dir
+mkdir $input_dir
+cp ./* $input_dir
 hadoop fs -mkdir $input_dir
-hadoop fs -put  $HOME/$input_dir/drivers.csv $input_dir
-hadoop fs -put  $HOME/$input_dir/timesheet.csv $input_dir
-hadoop fs -put  $HOME/$input_dir/truck_event_text_partition.csv $input_dir
+hadoop fs -put  $input_dir/drivers.csv $input_dir
+hadoop fs -put  $input_dir/timesheet.csv $input_dir
+hadoop fs -put  $input_dir/truck_event_text_partition.csv $input_dir
 
 hive -e "show databases;"
 hive -e "show tables;"
